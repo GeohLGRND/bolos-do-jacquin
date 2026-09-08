@@ -126,6 +126,7 @@ h1{
     align-items: center;
     position: relative;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 
@@ -145,13 +146,80 @@ h1{
     font-size: 32px;
     position: absolute;
     bottom: -10px;
+    margin-bottom: 10px;
 }
 
 .home_subtitulo hr{
     max-width: 380px;
     width: 100%;
     background-color: #c5a028;
-    margin-top: 5px;
     border: none;
     height: 2px;
+    
 }
+
+.img_categoria1{
+    background-image: url(../img/pexels-jonathanborba-26774588\ 1.png);
+    /* width: 70%; */
+    width: 770px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 50px 20px;
+}
+
+.container_categorias{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.container_categorias a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+    .img_categoria1 span{
+        font-family: "Hanken Grotesk", "sans serif";
+        font-weight: 500;
+    }
+
+    .home_produtos h3{
+        font-family: "Libre Caslon Text", serif;
+        font-weight: 400ç;
+    }
+
+    .img_categoria1 h3{
+        font-size: 32px;
+    }
+
+    .coluna_categorias{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .img_categoria2{
+        background-image: url(../img/Image\ \(1\).png);
+    }
+
+    .img_categoria3{
+         background-image: url(../img/Image\ \(2\).png);
+    }
+
+    .img_categoria2,
+    .img_categoria3{
+         /* width: 25%; */
+        width: 352px;
+        height: 284px;
+        display: flex;
+        align-items: flex-end;
+        padding: 20px 10px;
+        font-size: 24px;
+
+    }
+
+
+    
