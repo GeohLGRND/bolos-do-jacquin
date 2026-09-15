@@ -188,14 +188,14 @@ h1{
 
     .home_produtos h3{
         font-family: "Libre Caslon Text", serif;
-        font-weight: 400ç;
+        font-weight: 400;
     }
 
     .img_categoria1 h3{
         font-size: 32px;
     }
 
-    .coluna_categorias{
+    .col_categorias{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -221,5 +221,34 @@ h1{
 
     }
 
+    /* footer */
 
-    
+footer{
+    background-color: #fff4f4;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+}
+
+    .footer_container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer_container span,
+    .nav_footer a{
+        font-family: "Hanken Grotesk", "sans serif";
+
+    }
+
+    .nav_footer a{
+        text-decoration: none;
+        color: #747878;
+    }
+
+    .nav_footer{
+        display: flex;
+        justify-content: space-between;
+        width: 160px;
+    }
