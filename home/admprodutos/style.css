@@ -94,6 +94,16 @@ header{
     display: none;
 }
 
+
+
+
+
+
+
+
+
+
+
 /* medias */
 
 @media screen and (max-width: 768px){
@@ -177,3 +187,106 @@ header{
     
 }
 
+
+form{
+    /* background-color: aqua; */
+    width: 100%;
+}
+
+.inputs_form{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-around;
+}
+
+.lf_coluna{
+    display: flex;
+    flex-direction: column;
+}
+
+.lf_linha{
+    display: flex;
+}
+
+.input_img svg{
+    width: 24px;
+}
+
+.form_coluna1,
+.form_coluna2{
+    width: 414px;
+}
+
+.input_img,
+form label{
+    font-family: var(--fontHanken);
+    text-transform: uppercase;
+    color: #444444;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.inputs_form input[type=text],
+.inputs_form textarea{
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px #444444;
+    resize: none;
+}
+
+.inputs_form input[type=text],
+.inputs_form textarea:focus{
+    outline: none;
+}
+
+.linha_form{
+    margin-bottom: 20px;
+}
+
+.inputs_form input[type=file]{
+    display: none;
+}
+
+.input_img label{
+    /* background-color: #444444; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    border: solid 1px #444444;
+}
+
+.input_img label:hover{
+    cursor: pointer;
+}
+
+form input[type=checkbox],
+form input[type=text]{
+    height: 25px;
+}
+
+.input_cat input{
+    width: 314px;
+    margin-right: 20px;
+}
+
+.input_valor{
+    margin-right: 20px;
+    width: 360px;
+}
+
+form input[type=button]{
+    margin: 100px auto 0;
+    display: block;
+    background-color: #000000;
+    height: 60px;
+    color: #ffffff;
+    font-family: var(--fontHanken);
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 240px;
+    letter-spacing: 2px;
+    border: none;
+}
