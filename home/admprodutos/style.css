@@ -278,19 +278,23 @@ form input[type=button] {
 
 .list_produtos{
     background-color: var(--corSecundária);
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 table{
-    background-color: chocolate;
+    /* background-color: chocolate; */
     width: 100%;
     font-family: var(--fontHanken);
     text-transform: uppercase;
+    border-collapse: collapse;
 }
 
 thead{
     font-size: 12px;
     font-weight: 600;
     color: #444444;
+    text-align: left;
 }
 
 tbody{
@@ -299,7 +303,54 @@ tbody{
 
 table svg{
     width: 35px;
+    color: #bd0000;
 }
+
+
+th, td{
+    border-bottom: solid 1px #444444;
+    padding: 5px 10px;
+}
+
+/* --------------FOOTER--------- */
+
+footer{
+    background-color: #fff4f4;
+    height: 149px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+
+    .footer_container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer_container span,
+    .nav_footer a{
+        font-family: "Hanken Grotesk", "sans serif";
+
+    }
+
+    .nav_footer a{
+        text-decoration: none;
+        color: #747878;
+    }
+
+    .nav_footer{
+        display: flex;
+        justify-content: space-between;
+        width: 160px;
+    }
+
+
+    span{
+        text-align: center;
+    }
+
 
 
 /* medias */
@@ -341,4 +392,48 @@ table svg{
         width: 84%;
     }
 
+
+
+
+    
+    /* -----tabela---- */
+
+    thead{
+        display: none;
+    }
+
+
+    tbody tr{
+        display: flex;
+        flex-direction: column;
+        border: solid 1px #444444;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: #0000003b 5px 5px 5px;
+        max-width: 500px;
+        margin: 0 auto 50px;
+    }
+
+
+    tbody td{
+        border: none;  
+    }
+    
+
+    tbody td::before{
+        content: attr(data-cell) ": ";
+        font-size: 12px;
+        color: #444444;
+    }
+
+
+    .footer_container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    span{
+        margin: 20px 0;
+        text-align: center;
+    }
 }
