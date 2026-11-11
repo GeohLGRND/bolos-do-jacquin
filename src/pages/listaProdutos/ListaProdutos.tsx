@@ -1,0 +1,53 @@
+import './ListaProdutos.css'
+import granChocolat from '../../assets/icones/produtos/le_grand_chocolat.png'
+import iconeUser from '../../assets/icones/user.svg'
+import iconeStar from '../../assets/icones/star.svg'
+import { Link } from 'react-router-dom'
+
+
+function listaProdutos() {
+    return (
+        <>
+            <main>
+                <section className="prod_banner"></section>
+                <section className="container prod_container">
+                    <div className="box_h2">
+                        <h1>Nossos Bolos</h1>
+                        <span>Nos Gâteaux</span>
+                        <hr />
+                    </div>
+                    <div className="prod_cards">
+                        <article className="prod_card">
+                            <figure>
+                                <img
+                                    src={granChocolat}
+                                    alt="foto do produto"
+                                />
+                            </figure>
+                            <h2>
+                                <Link to="/detalheProduto" >Le Grand Chocolat</Link>
+                            </h2>
+                            <p className="card_desc">
+                                Mousse de chocolate belga 70%, praliné de avelãs e biscuit de cacau.
+                            </p>
+                            <p className="card_rodape">
+                                <data value={185.0}>R$ 185,00 / kg</data>
+                                <span className="card_av">
+                                    <img src={iconeUser} alt="icone de usuarios" />
+                                    <data value={10}>10</data>
+                                    <img src={iconeStar} alt="icone de estrela" />
+                                    <data value="9.5">9,5</data>
+                                </span>
+                            </p>
+                        </article>
+                    </div>
+                </section>
+            </main>
+
+        </>
+
+    )
+
+}
+
+export default listaProdutos
